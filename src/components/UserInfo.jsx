@@ -5,7 +5,7 @@ import "./styles/userCard.css"
 const UserInfo = ({user, getAllUsers, setUpdateInfo, setCloseForm}) => {
 
     const deleteUserById = data => {
-        const URL = `http://users-crud.academlo.tech/users/${user.id}/`
+        const URL = `https://users-crud.academlo.tech/users/${user.id}/`
         axios.delete(URL, data)
             .then(res => {
                 console.log(res.data)
